@@ -11,6 +11,10 @@ import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { DetailComponent } from './detail/detail.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { FormsModule }   from '@angular/forms';
+import { HttpClientModule, HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -22,11 +26,14 @@ import { LoginComponent } from './login/login.component';
     BlogComponent,
     ContactComponent,
     DetailComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
