@@ -42,7 +42,7 @@ opacity: .95;
 /* Start form  attributes */
 form {
     width: 450px;
-    min-height: 500px;
+    min-height: 550px;
     height: auto;
     border-radius: 5px;
     margin: 2% auto;
@@ -178,7 +178,9 @@ button {
 
 /*     Sign Up button  */
 .sign-up {background: #B8F2E6;}
-
+.log-in {
+    background: linear-gradient(#ffd89b , #19547b);
+}
 
 /* buttons hover */
 button:hover {

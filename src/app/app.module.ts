@@ -15,6 +15,11 @@ import { RegisterComponent } from './register/register.component';
 import { FormsModule }   from '@angular/forms';
 import { HttpClientModule, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { BoardAdminComponent } from './board-admin/board-admin.component';
+import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
+import { BoardUserComponent } from './board-user/board-user.component';
+
+import { authInterceptorProviders } from './_helpers/auth.interceptor';
 
 @NgModule({
   declarations: [
@@ -27,7 +32,10 @@ import { Observable } from 'rxjs';
     ContactComponent,
     DetailComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    BoardAdminComponent,
+    BoardModeratorComponent,
+    BoardUserComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +43,7 @@ import { Observable } from 'rxjs';
     FormsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
