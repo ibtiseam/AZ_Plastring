@@ -10,6 +10,9 @@ import { RegisterComponent } from './register/register.component';
 import { BoardUserComponent } from './board-user/board-user.component';
 import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
 import { BoardAdminComponent } from './board-admin/board-admin.component';
+import { AddDevisComponent } from './add-devis/add-devis.component';
+import { ListeComponent } from './liste/liste.component';
+import { SendmailComponent } from './sendmail/sendmail.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -17,12 +20,16 @@ const routes: Routes = [
   { path: 'home/contact', component: ContactComponent },
   { path: 'about', component: AboutComponent },
   { path: 'portfolio', component: BlogComponent },
-  { path: 'portfolio/detail', component: DetailComponent },
+  { path: 'portfolio/detail/:id', component: DetailComponent },
   { path: 'login', component: LoginComponent },
   { path: 'login/register', component: RegisterComponent},
   { path: 'user', component: BoardUserComponent },
   { path: 'mod', component: BoardModeratorComponent },
   { path: 'admin', component: BoardAdminComponent },
+  { path: 'devis', component: AddDevisComponent },
+  { path: 'listedevis', component: ListeComponent },
+  { path: 'sendmail', component: SendmailComponent },
+
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 
 ];
