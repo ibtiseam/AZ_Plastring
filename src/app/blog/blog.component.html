@@ -4,15 +4,18 @@
             
             <h2>Les références de AZ Plastering</h2>
         </div>
-        <div class="row blog-page">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="container1">
+        <!--div class="row"-->
+            <!--div class="col-lg-4 col-md-8 col-sm-6 wow fadeInUp" data-wow-delay="0.2s"-->
+               
+                <div class="col-lg-4 col-md-8 col-sm-6 wow fadeInUp" data-wow-delay="0.2s" *ngFor="let chantier of chantiers">
                 <div class="blog-item">
                     <div class="blog-img">
-                        <img src="./assets/img/decathlon-sousse.jpg" alt="Image">
+                        <img src="data:image/png;base64,{{chantier.filePath}}" style="width: 350px;height: 200px;" alt="Image">
                     </div>
                     <div class="blog-title" >
-                        <h3>decathlon</h3>
-                        <a class="btn" href="#" routerLink="detail">+</a>
+                        <h3>{{chantier.name}}</h3>
+                        <a class="btn" (click)="chantierDetails(chantier.id)">+</a>
                     </div>
                     <div class="blog-meta">
                         <p>By<a href="">Admin</a></p>
@@ -20,112 +23,14 @@
                     </div>
                     <div class="blog-text">
                         <p>
-                            AZ Plastering a participé par la pose de plaques de plâtre pour le cloisonnement au chantier de construction de Décathlon Sousse Tunisie.
+                            AZ Plastering a participé par la pose de plaques de plâtre pour la construction de chantier {{chantier.name}} 
+                            et qui se localise dans {{chantier.region}}.
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="./assets/img/residence.jpg" alt="Image">
-                    </div>
-                    <div class="blog-title">
-                        <h3>Residence Karam</h3>
-                        <a class="btn" href="#" routerLink="detail">+</a>
-                    </div>
-                    <div class="blog-meta">
-                        <p>By<a href="">Admin</a></p>
-                        <p>In<a href="">Construction</a></p>
-                    </div>
-                    <div class="blog-text">
-                        <p>
-                            AZ Plastering a participé par le revêtement à l'enduit de plâtre projeté et la pose de plaques de platre au plafond du chantier de construction de la Résidence Karam Sousse.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="./assets/img/cogeb.jpg" alt="Image">
-                    </div>
-                    <div class="blog-title">
-                        <h3>Cogeb Tower</h3>
-                        <a class="btn" href="#" routerLink="detail">+</a>
-                    </div>
-                    <div class="blog-meta">
-                        <p>By<a href="">Admin</a></p>
-                        <p>In<a href="">Construction</a></p>
-                    </div>
-                    <div class="blog-text">
-                        <p>
-                            AZ Plastering a participé par le revêtement des murs en enduit de platre projeté, et la pose plafond en plaque de plâtre au chantier de construction de Cogeb Tower à Sousse Tunisie.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="./assets/img/blog-1.jpg" alt="Image">
-                    </div>
-                    <div class="blog-title">
-                        <h3>Résidence Vosages</h3>
-                        <a class="btn" href="#" routerLink="detail">+</a>
-                    </div>
-                    <div class="blog-meta">
-                        <p>By<a href="">Admin</a></p>
-                        <p>In<a href="">Construction</a></p>
-                    </div>
-                    <div class="blog-text">
-                        <p>
-                            AZ Plastering  a participé par le revêtement à l'enduit de plâtre projeté et la pose de plaques de platre au plafond du chantier de construction de l'ensemble résidentiel les Vosges à Tunis.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="./assets/img/blog-2.jpg" alt="Image">
-                    </div>
-                    <div class="blog-title">
-                        <h3>Résidence Melyna Carthage</h3>
-                        <a class="btn" href="#" routerLink="detail">+</a>
-                    </div>
-                    <div class="blog-meta">
-                        <p>By<a href="">Admin</a></p>
-                        <p>In<a href="">Construction</a></p>
-                    </div>
-                    <div class="blog-text">
-                        <p>
-                            AZ Plastering  a participé par le revêtement à l'enduit de plâtre projeté et la pose de plaques de platre au plafond du chantier de construction de l'ensemble résidentiel Résidence Melyna Carthage.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="./assets/img/blog-3.jpg" alt="Image">
-                    </div>
-                    <div class="blog-title">
-                        <h3>Go Sport</h3>
-                        <a class="btn" href="#" routerLink="detail">+</a>
-                    </div>
-                    <div class="blog-meta">
-                        <p>By<a href="">Admin</a></p>
-                        <p>In<a href="">Construction</a></p>
-                    </div>
-                    <div class="blog-text">
-                        <p>
-                            AZ Plastering a participé par la pose de plafond en plaques de plâtre au chantier de construction de la boutique Go Sport au Mall of Sousse
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+                 </div>
+                 <DIV STYLE="page-break-before:always"></DIV>
+       </div>
         <div class="row">
             <div class="col-12">
                 <ul class="pagination justify-content-center">
