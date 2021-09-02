@@ -9,6 +9,7 @@ import { DevisService } from 'src/app/_services/devis.service';
   styleUrls: ['./add-devis.component.css']
 })
 export class AddDevisComponent implements OnInit {
+  isSuccessful=false ;
   devis: Devis = {
     sujet: '',
     description: '',
@@ -35,6 +36,7 @@ export class AddDevisComponent implements OnInit {
         response => {
           console.log(response);
           this.submitted = true;
+          this.isSuccessful=true;
         },
         error => {
           console.log(error);

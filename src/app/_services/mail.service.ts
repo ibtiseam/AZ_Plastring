@@ -13,7 +13,7 @@ import { Mail } from '../models/mail.model';
 export class MailService {
 
   constructor(private http :HttpClient) {}
-  private baseUrl ='http://localhost:8080/api/mails';
+  private baseUrl ='https://az-platre.herokuapp.com/api/mails';
 
 
   enviarEmail(email :Mail): Observable<any> {

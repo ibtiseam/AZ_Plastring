@@ -16,4 +16,8 @@
       </div>
 
     <button type="submit" class="btn btn-success">Répondre</button>
+    <div class="alert alert-danger alert-dismissible" *ngIf="isSuccessful">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+       Email envoyé avec succées.
+    </div>
   </form>

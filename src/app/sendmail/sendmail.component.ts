@@ -16,13 +16,13 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./sendmail.component.css']
 })
 export class SendmailComponent implements OnInit {
- 
+  isSuccessful = false;
   ngOnInit(){
   }
   
 mail : Mail= new Mail();
 
-  constructor(private http: HttpClient, private emailService :MailService) { }
+  constructor(private http: HttpClient, private emailService :MailService,private router: Router) { }
 
    enviarEmail() {
     this.emailService.enviarEmail(this.mail)
@@ -31,6 +31,7 @@ mail : Mail= new Mail();
 
    onSubmit() {
     this.enviarEmail();
+    this.isSuccessful = true;
   }
 
 

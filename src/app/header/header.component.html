@@ -68,9 +68,8 @@
                         <a href="service.html"  class="nav-item nav-link">Service</a>
                         <a href="#" routerLink="devis" class="nav-item nav-link">Devis</a>
                         <a href="#" routerLink="portfolio"  class="nav-item nav-link">Portfilio</a>
-                        <a href="#" routerLink="listedevis"  class="nav-item nav-link">ListeDevis</a>
+                        <a *ngIf="isLoggedIn" href="#" routerLink="listedevis"  class="nav-item nav-link">ListeDevis</a>
 
-                     
                         <a href="#" routerLink="contact" class="nav-item nav-link">Contact</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Plus</a>
