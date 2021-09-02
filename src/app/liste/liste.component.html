@@ -32,6 +32,7 @@
             <label><strong>Nom&Prénom:</strong></label>
             {{ currentTutorial.nomprenom }}
           </div>
+          
           <button class="btn animated fadeInUp" (click)="deleteTutorial()">
             Delete
           </button>
@@ -46,6 +47,10 @@
           <br />
           <p>Please click on a Devis </p>
         </div>
+        <div class="alert alert-success alert-dismissible" *ngIf="isSuccessful" >
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+           Suppression avec succées.
+           </div>
     </div>
     </div>
     

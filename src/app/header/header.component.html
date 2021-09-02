@@ -70,11 +70,11 @@
                         <a href="#" routerLink="portfolio"  class="nav-item nav-link">Portfilio</a>
                         <a *ngIf="isLoggedIn" href="#" routerLink="listedevis"  class="nav-item nav-link">ListeDevis</a>
 
-                        <a href="#" routerLink="contact" class="nav-item nav-link">Contact</a>
+                        <a *ngIf="isLoggedIn" href="#" routerLink="register" class="nav-item nav-link">Créer compte</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Plus</a>
                             <div class="dropdown-menu">
-                                <a href="single.html" class="dropdown-item">Facture</a>
+                                <a href="#" routerLink="contact"class="dropdown-item">Contact</a>
                             </div>
                         </div>
                     </div>

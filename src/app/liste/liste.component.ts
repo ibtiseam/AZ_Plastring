@@ -13,6 +13,7 @@ export class ListeComponent implements OnInit {
   tutorials?: Devis[];
   currentIndex = -1;
   currentTutorial?: Devis;
+  isSuccessful=false ;
   constructor(private tutorialService: DevisService,private router:Router) { }
 
   ngOnInit(): void {
@@ -48,6 +49,7 @@ export class ListeComponent implements OnInit {
         response => {
           console.log(response);
           this.refreshList();
+          this.isSuccessful=true;
         },
         error => {
           console.log(error);

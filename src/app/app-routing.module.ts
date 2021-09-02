@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: 'portfolio', component: BlogComponent },
   { path: 'portfolio/detail/:id', component: DetailComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'login/register', component: RegisterComponent},
+  { path: 'register', component: RegisterComponent},
   { path: 'user', component: BoardUserComponent },
   { path: 'mod', component: BoardModeratorComponent },
   { path: 'admin', component: BoardAdminComponent },
