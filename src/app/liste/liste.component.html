@@ -34,7 +34,7 @@
           </div>
           
           <button class="btn animated fadeInUp" (click)="deleteTutorial()">
-            Delete
+            Supprimer
           </button>
           <button class="btn animated fadeInUp mr-2" (click)="repondre()" >
             Répondre
@@ -45,7 +45,7 @@
     
         <div *ngIf="!currentTutorial">
           <br />
-          <p>Please click on a Devis </p>
+          <p>Veuillez choisir une devis </p>
         </div>
         <div class="alert alert-success alert-dismissible" *ngIf="isSuccessful" >
           <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
