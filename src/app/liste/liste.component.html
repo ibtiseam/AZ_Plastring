@@ -1,6 +1,6 @@
 <div class="list row">
     <div class="col-md-6">
-        <h4>Liste des Devis</h4>
+        <h4>Liste des Questions</h4>
         <ul class="list-group">
           <li
             class="list-group-item"
@@ -16,7 +16,7 @@
       </div>
       <div class="col-md-6">
         <div *ngIf="currentTutorial">
-          <h4>Devis</h4>
+          <h4>Question:</h4>
           <div>
             <label><strong>Sujet:</strong></label> {{ currentTutorial.sujet }}
           </div>
@@ -45,7 +45,7 @@
     
         <div *ngIf="!currentTutorial">
           <br />
-          <p>Veuillez choisir une devis </p>
+          <p>Veuillez choisir une question </p>
         </div>
         <div class="alert alert-success alert-dismissible" *ngIf="isSuccessful" >
           <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>

@@ -26,8 +26,8 @@ const routes: Routes = [
   { path: 'user', component: BoardUserComponent },
   { path: 'mod', component: BoardModeratorComponent },
   { path: 'admin', component: BoardAdminComponent },
-  { path: 'devis', component: AddDevisComponent },
-  { path: 'listedevis', component: ListeComponent },
+  { path: 'question', component: AddDevisComponent },
+  { path: 'listequestion', component: ListeComponent },
   { path: 'sendmail', component: SendmailComponent },
 
   { path: '', redirectTo: 'home', pathMatch: 'full' }
